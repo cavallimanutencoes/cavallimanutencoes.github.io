@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cavalli Manutenções | Manutenção Residencial e Comercial em Curitiba</title>
+<meta name="description" content="Cavalli Manutenções: manutenção residencial e comercial em Curitiba e região. Elétrica, hidráulica, pintura, pequenos reparos, instalações e serviços de marido de aluguel. Solicite seu orçamento pelo WhatsApp.">
+<meta name="keywords" content="manutenção residencial Curitiba, manutenção comercial Curitiba, marido de aluguel Curitiba, eletricista, encanador, pintura, pequenos reparos">
+<meta name="theme-color" content="#111111">
+<style>
+:root{--gold:#f5b900;--gold2:#ffd13b;--black:#101010;--dark:#171717;--white:#fff;--gray:#f4f4f4;--text:#202020;--green:#18b957}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--text);background:#fff;line-height:1.55}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{background:rgba(12,12,12,.98);color:#fff;position:sticky;top:0;z-index:20;border-bottom:1px solid #333}
+.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:12px;font-weight:900}
+.logo img{width:58px;height:58px;object-fit:cover;border-radius:8px}
+.logo span{font-size:20px;line-height:1.05;color:var(--gold)}
+.logo small{display:block;color:#fff;font-size:9px;margin-top:4px;letter-spacing:.4px}
+nav{display:flex;gap:26px;font-size:14px}
+nav a:hover{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--gold);color:#111;font-weight:800;padding:14px 22px;border-radius:30px;transition:.2s}
+.btn:hover{transform:translateY(-2px);background:var(--gold2)}
+.btn.whats{background:var(--green);color:#fff}
+.hero{background:linear-gradient(115deg,#101010 0%,#1a1a1a 58%,#2a210c 100%);color:#fff;padding:82px 0 74px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;right:-180px;top:-180px;width:520px;height:520px;border:70px solid rgba(245,185,0,.12);border-radius:50%}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center;position:relative;z-index:1}
+.kicker{color:var(--gold);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:13px}
+h1{font-size:clamp(38px,5vw,66px);line-height:1.02;margin:12px 0 20px}
+h1 em{color:var(--gold);font-style:normal}
+.hero p{font-size:18px;color:#ddd;max-width:650px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}
+.contact-line{display:flex;gap:25px;flex-wrap:wrap;color:#ddd;font-size:14px}
+.hero-card{background:#fff;color:#111;border-radius:24px;padding:30px;box-shadow:0 25px 60px rgba(0,0,0,.3)}
+.hero-card .mini{display:flex;gap:14px;align-items:center;padding:16px 0;border-bottom:1px solid #ddd}
+.hero-card .mini:last-child{border:0}
+.icon{width:46px;height:46px;border-radius:50%;background:var(--gold);display:grid;place-items:center;font-size:22px;flex:none}
+.section{padding:78px 0}
+.section.gray{background:var(--gray)}
+.section.dark{background:#111;color:#fff}
+.section-title{text-align:center;margin-bottom:42px}
+.section-title span{color:#b18400;font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:12px}
+.section-title h2{font-size:38px;line-height:1.1;margin-top:8px}
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.service{padding:25px;background:#fff;border:1px solid #e6e6e6;border-radius:18px;text-align:center;transition:.2s}
+.service:hover{transform:translateY(-4px);box-shadow:0 10px 25px rgba(0,0,0,.08)}
+.service .icon{margin:0 auto 13px}
+.service h3{font-size:17px;margin-bottom:6px}
+.service p{font-size:13px;color:#666}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.about h2{font-size:40px;line-height:1.1;margin:10px 0 18px}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:25px}
+.check{font-weight:700}
+.check:before{content:"✓";color:var(--gold);margin-right:8px;font-size:20px}
+.cta{background:linear-gradient(110deg,#111,#25200f);color:#fff;border-radius:28px;padding:50px;text-align:center}
+.cta h2{font-size:40px;margin-bottom:10px}
+.cta p{color:#ddd;margin-bottom:25px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.contact-card{background:#fff;border:1px solid #ddd;border-radius:18px;padding:28px}
+.contact-card h3{margin-bottom:8px}
+footer{background:#0c0c0c;color:#ddd;padding:38px 0}
+.footer-grid{display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap;align-items:center}
+footer strong{color:var(--gold);font-size:21px}
+footer small{color:#aaa}
+.float{position:fixed;right:20px;bottom:20px;background:var(--green);color:#fff;width:62px;height:62px;border-radius:50%;display:grid;place-items:center;font-size:27px;box-shadow:0 8px 25px rgba(0,0,0,.3);z-index:30}
+@media(max-width:800px){
+ nav{display:none}.nav{height:68px}.logo img{width:48px;height:48px}
+ .hero{padding:60px 0}.hero-grid,.about,.contact-grid{grid-template-columns:1fr}
+ .hero-card{margin-top:10px}.services{grid-template-columns:repeat(2,1fr)}
+ .section{padding:58px 0}.section-title h2,.about h2,.cta h2{font-size:32px}
+ .checks{grid-template-columns:1fr}
+}
+@media(max-width:480px){.services{grid-template-columns:1fr}.actions .btn{width:100%}.hero p{font-size:16px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="logo" href="#inicio">
+      <img src="logo-cavalli.jpg" alt="Logo Cavalli Manutenções">
+      <div>CAVALLI<small>MANUTENÇÃO RESIDENCIAL E COMERCIAL</small></div>
+    </a>
+    <nav>
+      <a href="#inicio">Início</a><a href="#servicos">Serviços</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a>
+    </nav>
+    <a class="btn" href="https://wa.me/5541996665570?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." target="_blank">WhatsApp</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="container hero-grid">
+    <div>
+      <div class="kicker">MARIDO DE ALUGUEL • CURITIBA E REGIÃO</div>
+      <h1>Marido de aluguel para sua casa ou empresa.<br><em>A gente resolve.</em></h1>
+      <p>Marido de aluguel e manutenção em geral para casas, apartamentos, empresas e comércios. Elétrica, hidráulica, pintura, instalações e pequenos reparos em Curitiba e região.</p>
+      <div class="actions">
+        <a class="btn whats" href="https://wa.me/5541996665570?text=Olá!%20Vim%20pelo%20site%20da%20Cavalli%20Manutenções%20e%20gostaria%20de%20um%20orçamento." target="_blank">💬 Solicitar orçamento pelo WhatsApp</a>
+        <a class="btn" href="mailto:cvlmanutencoes@gmail.com">✉ Enviar e-mail</a>
+      </div>
+      <div class="contact-line"><span>📍 Atendimento em Curitiba e região</span><span>📱 (41) 99666-5570</span></div>
+    </div>
+    <div class="hero-card">
+      <div class="mini"><div class="icon">🏠</div><div><strong>Residencial</strong><br><small>Reparos e manutenção para seu imóvel.</small></div></div>
+      <div class="mini"><div class="icon">🏢</div><div><strong>Comercial</strong><br><small>Manutenção para empresas e comércios.</small></div></div>
+      <div class="mini"><div class="icon">🛠️</div><div><strong>Marido de aluguel</strong><br><small>Pequenos reparos, instalações e manutenção geral.</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="servicos">
+  <div class="container">
+    <div class="section-title"><span>Marido de aluguel e manutenção</span><h2>Tudo o que você precisa em um só lugar</h2></div>
+    <div class="services">
+      <div class="service"><div class="icon">⚡</div><h3>Elétrica</h3><p>Instalações, ajustes, tomadas, interruptores, luminárias e manutenção elétrica.</p></div>
+      <div class="service"><div class="icon">🚰</div><h3>Hidráulica</h3><p>Encanamento, vazamentos, torneiras, sifões, registros e reparos hidráulicos.</p></div>
+      <div class="service"><div class="icon">🎨</div><h3>Pintura</h3><p>Pintura, retoques, preparação e recuperação de paredes e ambientes.</p></div>
+      <div class="service"><div class="icon">🔨</div><h3>Pequenos reparos</h3><p>Correções e ajustes para deixar seu imóvel funcionando e organizado.</p></div>
+      <div class="service"><div class="icon">🏠</div><h3>Manutenção residencial</h3><p>Serviços para casas, apartamentos e imóveis residenciais.</p></div>
+      <div class="service"><div class="icon">🏢</div><h3>Manutenção comercial</h3><p>Atendimento para empresas, lojas, escritórios e estabelecimentos.</p></div>
+      <div class="service"><div class="icon">🛠️</div><h3>Marido de aluguel</h3><p>Montagens, instalações, ajustes e diversos serviços do dia a dia.</p></div>
+      <div class="service"><div class="icon">💡</div><h3>Instalações</h3><p>Instalação e ajustes de acessórios, equipamentos e itens do imóvel.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section gray" id="sobre">
+  <div class="container about">
+    <div>
+      <span class="kicker">MARIDO DE ALUGUEL • CAVALLI MANUTENÇÕES</span>
+      <h2>Praticidade para cuidar do seu imóvel.</h2>
+      <p>Atendemos clientes residenciais e comerciais com serviços de manutenção em geral. A proposta é facilitar sua vida: você entra em contato, explica o que precisa e recebe orientação para o serviço e orçamento.</p>
+      <div class="checks">
+        <div class="check">Atendimento rápido</div><div class="check">Orçamento</div>
+        <div class="check">Serviços residenciais</div><div class="check">Serviços comerciais</div>
+        <div class="check">Manutenção em geral</div><div class="check">Curitiba e região</div>
+      </div>
+    </div>
+    <div class="cta">
+      <h2>Precisa de um reparo?</h2>
+      <p>Fale diretamente pelo WhatsApp e conte o que você precisa.</p>
+      <a class="btn whats" href="https://wa.me/5541996665570?text=Olá!%20Preciso%20de%20um%20serviço%20de%20manutenção." target="_blank">💬 Falar no WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contato">
+  <div class="container">
+    <div class="section-title"><span>Contato</span><h2>Solicite seu orçamento</h2></div>
+    <div class="contact-grid">
+      <div class="contact-card"><h3>📱 WhatsApp</h3><p>(41) 99666-5570</p><br><a class="btn whats" href="https://wa.me/5541996665570" target="_blank">Chamar no WhatsApp</a></div>
+      <div class="contact-card"><h3>✉️ E-mail</h3><p>cvlmanutencoes@gmail.com</p><br><a class="btn" href="mailto:cvlmanutencoes@gmail.com">Enviar e-mail</a></div>
+    </div>
+    <p style="text-align:center;margin-top:25px;color:#666">Atendimento em Curitiba e região. <strong>Não divulgamos endereço residencial.</strong></p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div><strong>CAVALLI MANUTENÇÕES</strong><br><small>Manutenção residencial e comercial</small></div>
+    <div><small>📱 (41) 99666-5570 &nbsp; | &nbsp; ✉ cvlmanutencoes@gmail.com</small></div>
+    <div><small>© 2026 Cavalli Manutenções</small></div>
+  </div>
+</footer>
+<a class="float" href="https://wa.me/5541996665570?text=Olá!%20Gostaria%20de%20um%20orçamento." target="_blank" aria-label="WhatsApp">◔</a>
+</body>
+</html>
